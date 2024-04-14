@@ -1,0 +1,9 @@
+# docker run --name pg1 -p 5432:5432 -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=postgres -d postgres:15-alpine
+
+CREATE TABLE public.producto (
+	id bigserial NOT NULL,
+	nombre varchar NULL,
+	cantidad int4 NULL,
+	CONSTRAINT producto_pk PRIMARY KEY (id)
+);
+
